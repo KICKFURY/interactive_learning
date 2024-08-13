@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:interactive_learning/view/secciones_screen.dart';
+import 'package:interactive_learning/view/home_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,15 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: const HomeScreen(),
+      routes: {
+        'SeccionesScreen': (context) => SectionScreen(
+              category: 'Test',
+            ),
+      },
     );
   }
 }
