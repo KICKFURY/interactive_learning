@@ -1,4 +1,3 @@
-import 'package:interactive_learning/constants/color.dart';
 import 'package:flutter/material.dart';
 
 class SearchTextField extends StatelessWidget {
@@ -10,16 +9,6 @@ class SearchTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        prefixIcon: const Icon(
-          Icons.search,
-          color: Colors.grey,
-          size: 26,
-        ),
-        suffixIcon: const Icon(
-          Icons.mic,
-          color: kPrimaryColor,
-          size: 26,
-        ),
         // helperText: "Search your topic",
         floatingLabelBehavior: FloatingLabelBehavior.never,
         labelText: "Search your topic",
