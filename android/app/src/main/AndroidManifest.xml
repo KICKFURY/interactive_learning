@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="interactive_learning"
+        android:label="Interactive Learning"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
