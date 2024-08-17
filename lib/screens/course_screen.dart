@@ -5,9 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class CourseScreen extends StatefulWidget {
-  const CourseScreen({Key? key}) : super(key: key);
+  const CourseScreen({Key? key, required this.index}) : super(key: key);
+
+  final int index;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CourseScreenState createState() => _CourseScreenState();
 }
 
@@ -58,11 +61,14 @@ class _CourseScreenState extends State<CourseScreen> {
                     },
                     shrinkWrap: true,
                     itemBuilder: (_, int index) {
+                      var validacion = widget.index == 1;
                       return CourseContainer(
-                        course: courses[index],
+                        course: validacion
+                            ? courseMatematicas[index]
+                            : courses[index],
                       );
                     },
-                    itemCount: courses.length,
+                    itemCount: courseMatematicas.length,
                   ),
                 ),
               ],
@@ -76,6 +82,7 @@ class _CourseScreenState extends State<CourseScreen> {
 
 class CourseContainer extends StatelessWidget {
   final Course course;
+
   const CourseContainer({
     Key? key,
     required this.course,
@@ -89,6 +96,7 @@ class CourseContainer extends StatelessWidget {
           MaterialPageRoute(
               builder: (context) => DetailsScreen(
                     title: course.name,
+                    url: course.url,
                   ))),
       child: Container(
         decoration: BoxDecoration(

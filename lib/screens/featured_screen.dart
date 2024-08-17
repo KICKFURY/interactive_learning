@@ -50,6 +50,7 @@ class Body extends StatelessWidget {
           itemBuilder: (context, index) {
             return CategoryCard(
               category: categoryList[index],
+              index: categoryList[index].id,
             );
           },
           itemCount: categoryList.length,
@@ -61,9 +62,12 @@ class Body extends StatelessWidget {
 
 class CategoryCard extends StatelessWidget {
   final Category category;
+  final int index;
+
   const CategoryCard({
     Key? key,
     required this.category,
+    required this.index,
   }) : super(key: key);
 
   @override
@@ -72,7 +76,9 @@ class CategoryCard extends StatelessWidget {
       onTap: () => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const CourseScreen(),
+          builder: (context) => CourseScreen(
+            index: index,
+          ),
         ),
       ),
       child: Container(

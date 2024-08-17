@@ -1,18 +1,20 @@
 import 'package:interactive_learning/constants/color.dart';
 import 'package:interactive_learning/constants/icons.dart';
+import 'package:interactive_learning/constants/videos.dart';
 import 'package:interactive_learning/models/lesson.dart';
 import 'package:interactive_learning/widgets/custom_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:video_player/video_player.dart';
 
 import '../widgets/lesson_card.dart';
 
 class DetailsScreen extends StatefulWidget {
   final String title;
+  final String url;
   const DetailsScreen({
     Key? key,
     required this.title,
+    required this.url,
   }) : super(key: key);
 
   @override
@@ -52,10 +54,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       Positioned(
                         left: 0,
                         child: CustomIconButton(
-                          child: const Icon(Icons.arrow_back),
                           height: 35,
                           width: 35,
                           onTap: () => Navigator.pop(context),
+                          child: const Icon(Icons.arrow_back),
                         ),
                       ),
                     ],
@@ -64,13 +66,15 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 const SizedBox(
                   height: 25,
                 ),
-                const CustomVideoPlayer(),
+                CustomVideoPlayer(
+                  url: widget.url,
+                ),
                 const SizedBox(
                   height: 15,
                 ),
-                const Text(
-                  "Futter Novice to Ninja",
-                  style: TextStyle(
+                Text(
+                  widget.title,
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 18,
                   ),
@@ -79,7 +83,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   height: 3,
                 ),
                 const Text(
-                  "Created by DevWheels",
+                  "Created by Developer",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 16,
