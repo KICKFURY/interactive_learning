@@ -60,6 +60,28 @@ class Body extends StatelessWidget {
   }
 }
 
+Route createSlideTransitionRoute(Widget page) {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => page,
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const begin = Offset(1.0, 0.0);
+      const end = Offset.zero;
+      const curve = Curves.easeInOut;
+
+      var tween =
+          Tween<Offset>(begin: begin, end: end).chain(CurveTween(curve: curve));
+      var offsetAnimation = animation.drive(tween);
+
+      return SlideTransition(
+        position: offsetAnimation,
+        child: child,
+      );
+    },
+    transitionDuration: const Duration(milliseconds: 700),
+    reverseTransitionDuration: const Duration(milliseconds: 700),
+  );
+}
+
 class CategoryCard extends StatelessWidget {
   final Category category;
   final int index;
@@ -73,14 +95,14 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => CourseScreen(
-            index: index,
+      onTap: () {
+        Navigator.push(
+          context,
+          createSlideTransitionRoute(
+            CourseScreen(index: index),
           ),
-        ),
-      ),
+        );
+      },
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
@@ -91,7 +113,7 @@ class CategoryCard extends StatelessWidget {
               color: const Color.fromARGB(255, 10, 10, 10).withOpacity(.1),
               blurRadius: 7.0,
               spreadRadius: .05,
-            ), //BoxShadow
+            ),
           ],
         ),
         child: Column(
@@ -104,9 +126,7 @@ class CategoryCard extends StatelessWidget {
                 height: kCategoryCardImageSize,
               ),
             ),
-            const SizedBox(
-              height: 0,
-            ),
+            const SizedBox(height: 0),
             Text(category.name),
             Text(
               "${category.noOfCourses.toString()} courses",

@@ -1,3 +1,4 @@
+//Matematica
 const numerosNaturalesEnteros = 'https://www.youtube.com/watch?v=UJASstjzhJs';
 const propiedadesDeLasOperaciones =
     'https://www.youtube.com/watch?v=eRKst5fK0sI';
@@ -27,3 +28,26 @@ const comoSaberQueOperacionHacer =
 const razonamientoLogico = 'https://www.youtube.com/watch?v=QyNMZ0JVTzA';
 const matematicasEnLaVidaCotidiana =
     'https://www.youtube.com/watch?v=-YCrf-fmS-Q';
+
+//Ingles
+const alfabetoYpronunciacion = 'https://www.youtube.com/watch?v=I2SaZnEjmZw';
+const saludosYpresentaciones = 'https://www.youtube.com/watch?v=fbVEFymdUtk';
+const numerosYfechas = 'https://www.youtube.com/watch?v=mewbwwwmMik';
+const diasDeLaSemanaMeses = 'https://www.youtube.com/watch?v=C9LkECn3lls';
+const colores = 'https://www.youtube.com/watch?v=8VWfK4SleTs';
+const objetosComunes = 'https://www.youtube.com/watch?v=_CEF_N5SniE';
+const lugares = 'https://www.youtube.com/watch?v=KJ7nYpsXbPw';
+const familiaYrelaciones = 'https://www.youtube.com/watch?v=wdPdBOfoJ1w';
+const verboToBe = 'https://www.youtube.com/watch?v=8iLPYo9p3I0';
+const articulosDefinidosEindifinidos =
+    'https://www.youtube.com/watch?v=u9fuPGgvLB8';
+const pronombresPersonalesYposesivos =
+    'https://www.youtube.com/watch?v=rFZQmXjALbU';
+const pedirInformacionPersonal = 'https://www.youtube.com/watch?v=hFj8dIYV4W8';
+const describirPersonas = 'https://www.youtube.com/watch?v=x26avfZR5XI';
+const describirObjetos = 'https://www.youtube.com/watch?v=Mvt3Xjp3TyU';
+const expresarGustosYpreferencias =
+    'https://www.youtube.com/watch?v=DlxKVmO3iP8';
+const verbosDeAccionComunes = 'https://www.youtube.com/watch?v=brrPHWUPxhI';
+const describirLaRutinaDiaria = 'https://www.youtube.com/watch?v=Fr00BsHUmxU';
+const actividadesDeTiempoLibre = 'https://www.youtube.com/watch?v=5ChpZ8D0UfU';

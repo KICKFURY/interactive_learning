@@ -1,6 +1,5 @@
 import 'package:interactive_learning/constants/color.dart';
 import 'package:interactive_learning/constants/icons.dart';
-import 'package:interactive_learning/constants/videos.dart';
 import 'package:interactive_learning/models/lesson.dart';
 import 'package:interactive_learning/widgets/custom_video_player.dart';
 import 'package:flutter/material.dart';
