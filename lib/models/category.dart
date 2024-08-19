@@ -24,7 +24,7 @@ List<Category> categoryList = [
   Category(
     id: 2,
     name: 'Ingles',
-    noOfCourses: 20,
+    noOfCourses: courseIngles.length,
     thumbnail: 'assets/icons/accounting.jpg',
   ),
   Category(

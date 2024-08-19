@@ -65,10 +65,12 @@ class _CourseScreenState extends State<CourseScreen> {
                       return CourseContainer(
                         course: validacion
                             ? courseMatematicas[index]
-                            : courses[index],
+                            : courseIngles[index],
                       );
                     },
-                    itemCount: courseMatematicas.length,
+                    itemCount: widget.index == 1
+                        ? courseMatematicas.length
+                        : courseIngles.length,
                   ),
                 ),
               ],
