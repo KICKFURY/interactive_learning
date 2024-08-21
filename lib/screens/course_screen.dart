@@ -61,16 +61,28 @@ class _CourseScreenState extends State<CourseScreen> {
                     },
                     shrinkWrap: true,
                     itemBuilder: (_, int index) {
-                      var validacion = widget.index == 1;
                       return CourseContainer(
-                        course: validacion
+                        course: widget.index == 1
                             ? courseMatematicas[index]
-                            : courseIngles[index],
+                            : widget.index == 2
+                                ? courseIngles[index]
+                                : widget.index == 3
+                                    ? courseQuimica[index]
+                                    : widget.index == 4
+                                        ? courseRedaccion[index]
+                                        // ignore: null_check_always_fails
+                                        : null!,
                       );
                     },
                     itemCount: widget.index == 1
                         ? courseMatematicas.length
-                        : courseIngles.length,
+                        : widget.index == 2
+                            ? courseIngles.length
+                            : widget.index == 3
+                                ? courseQuimica.length
+                                : widget.index == 4
+                                    ? courseRedaccion.length
+                                    : 1,
                   ),
                 ),
               ],
