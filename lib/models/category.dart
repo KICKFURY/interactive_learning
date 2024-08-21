@@ -30,13 +30,13 @@ List<Category> categoryList = [
   Category(
     id: 3,
     name: 'Quimica',
-    noOfCourses: 16,
+    noOfCourses: courseQuimica.length,
     thumbnail: 'assets/icons/photography.jpg',
   ),
   Category(
     id: 4,
     name: 'Redaccion',
-    noOfCourses: 25,
+    noOfCourses: courseQuimica.length,
     thumbnail: 'assets/icons/design.jpg',
   ),
 ];
