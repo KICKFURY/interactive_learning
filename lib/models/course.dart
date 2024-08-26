@@ -1,3 +1,4 @@
+import 'package:interactive_learning/constants/pdf.dart';
 import 'package:interactive_learning/constants/videos.dart';
 
 class Course {
@@ -6,6 +7,7 @@ class Course {
   String author;
   String thumbnail;
   String url;
+  String path;
 
   Course({
     required this.author,
@@ -13,53 +15,9 @@ class Course {
     required this.name,
     required this.thumbnail,
     required this.url,
+    required this.path,
   });
 }
-
-List<Course> courses = [
-  Course(
-    author: "DevWheels",
-    completedPercentage: .50,
-    name: "Numeros naturales y enteros",
-    thumbnail: "assets/icons/flutter.jpg",
-    url: '',
-  ),
-  Course(
-    author: "DevWheels",
-    completedPercentage: .60,
-    name: "Propiedades de las operaciones",
-    thumbnail: "assets/icons/react.jpg",
-    url: '',
-  ),
-  Course(
-    author: "DevWheels",
-    completedPercentage: .75,
-    name: "Node - The complete guide",
-    thumbnail: "assets/icons/node.png",
-    url: '',
-  ),
-  Course(
-    author: "DevWheels",
-    completedPercentage: .75,
-    name: "Flutter Novice to Ninja",
-    thumbnail: "assets/icons/flutter.jpg",
-    url: '',
-  ),
-  Course(
-    author: "DevWheels",
-    completedPercentage: .60,
-    name: "React Novice to Ninja",
-    thumbnail: "assets/icons/react.jpg",
-    url: '',
-  ),
-  Course(
-    author: "DevWheels",
-    completedPercentage: .75,
-    name: "Node - The complete guide",
-    thumbnail: "assets/icons/node.png",
-    url: '',
-  ),
-];
 
 List<Course> courseMatematicas = [
   Course(
@@ -68,6 +26,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/flutter.jpg',
     url: numerosNaturalesEnteros,
+    path: numerosNaturalesEnterosPDF,
   ),
   Course(
     name: 'Propiedades de las operaciones',
@@ -75,6 +34,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: propiedadesDeLasOperaciones,
+    path: propiedadesDeLasOperacionesPDF,
   ),
   Course(
     name: 'Multiplos y divisores',
@@ -82,6 +42,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: multilposYDivisores,
+    path: multilposYDivisoresPDF,
   ),
   Course(
     name: 'Concepto de fraccion',
@@ -89,6 +50,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: conceptoDeFraccion,
+    path: conceptoDeFraccionPDF,
   ),
   Course(
     name: 'Operaciones con fraccion',
@@ -96,6 +58,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: operacionesConFraccion,
+    path: operacionesConFraccionPDF,
   ),
   Course(
     name: 'Convertir fraccion en decimal',
@@ -103,6 +66,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: convertirFraccionEnDecimal,
+    path: convertirFraccionEnDecimalPDF,
   ),
   Course(
     name: 'Operaciones con decimales',
@@ -110,6 +74,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: operacionesConDecimales,
+    path: operacionesConDecimalesPDF,
   ),
   Course(
     name: 'Unidades de medidas (longitud, masa, capacidad)',
@@ -117,6 +82,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: unidadesDeMedidas,
+    path: unidadesDeMedidasPDF,
   ),
   Course(
     name: 'Conversion de unidades de medidas',
@@ -124,6 +90,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: conversionDeUnidades,
+    path: conversionDeUnidadesPDF,
   ),
   Course(
     name: 'Areas y perimetros',
@@ -131,6 +98,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: perimetroFigurasGeometricas,
+    path: perimetroFigurasGeometricasPDF,
   ),
   Course(
     name: 'Volumen de solidos regulares',
@@ -138,6 +106,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: volumenDeSolido,
+    path: volumenDeSolidoPDF,
   ),
   Course(
     name: 'Giro, traslacion y simetria. Transacciones geometricas',
@@ -145,6 +114,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: transaccionesGeometricas,
+    path: transaccionesGeometricasPDF,
   ),
   Course(
     name:
@@ -153,6 +123,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: expresionesAlgebraicas,
+    path: expresionesAlgebraicasPDF,
   ),
   Course(
     name: 'Ecuaciones de primer grado',
@@ -160,6 +131,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: ecuacionesDePrimerGrado,
+    path: ecuacionesDePrimerGradoPDF,
   ),
   Course(
     name: 'Patrones y Secuencias',
@@ -167,6 +139,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: patronesYSecuencias,
+    path: patronesYSecuenciasPDF,
   ),
   Course(
     name: 'Recoleccion y organizacion de datos',
@@ -174,6 +147,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: recoleccionYOrganizacionDeDatos,
+    path: recoleccionYOrganizacionDeDatosPDF,
   ),
   Course(
     name: 'Tipos de graficos estadisticos',
@@ -181,6 +155,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: graficosEstadisticos,
+    path: graficosEstadisticosPDF,
   ),
   Course(
     name: 'Media, moda y mediada | Medidas de tendencia central',
@@ -188,6 +163,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: medidasDeTendenciaCentral,
+    path: medidasDeTendenciaCentralPDF,
   ),
   Course(
     name: 'Probabilidad',
@@ -195,6 +171,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: probabilidad,
+    path: probabilidadPDF,
   ),
   Course(
     name: 'Como saber que operacion hay que hacer en un problema matemático',
@@ -202,6 +179,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: comoSaberQueOperacionHacer,
+    path: comoSaberQueOperacionHacerPDF,
   ),
   Course(
     name: 'Razonamiento Logico',
@@ -209,6 +187,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: razonamientoLogico,
+    path: razonamientoLogicoPDF,
   ),
   Course(
     name: 'Funciones matematicas en la vida diaria',
@@ -216,6 +195,7 @@ List<Course> courseMatematicas = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: matematicasEnLaVidaCotidiana,
+    path: matematicasEnLaVidaCotidianaPDF,
   ),
 ];
 
@@ -226,6 +206,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: alfabetoYpronunciacion,
+    path: alfabetoYpronunciacionPDF,
   ),
   Course(
     name: 'Saludos y presentaciones',
@@ -233,6 +214,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: saludosYpresentaciones,
+    path: saludosYpresentacionesPDF,
   ),
   Course(
     name: 'Números y fechas',
@@ -240,6 +222,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: numerosYfechas,
+    path: numerosYfechasPDF,
   ),
   Course(
     name: 'Días de la semana, meses',
@@ -247,6 +230,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: diasDeLaSemanaMeses,
+    path: diasDeLaSemanaMesesPDF,
   ),
   Course(
     name: 'Objetos comunes',
@@ -254,6 +238,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: objetosComunes,
+    path: objetosComunesPDF,
   ),
   Course(
     name: 'Lugares',
@@ -261,6 +246,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: lugares,
+    path: lugaresPDF,
   ),
   Course(
     name: 'Familia y relaciones',
@@ -268,6 +254,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: familiaYrelaciones,
+    path: familiaYrelacionesPDF,
   ),
   Course(
     name: 'Verbo “to be” (ser/estar)',
@@ -275,6 +262,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: verboToBe,
+    path: verboToBePDF,
   ),
   Course(
     name: 'Artículos definidos e indefinidos',
@@ -282,6 +270,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: articulosDefinidosEindifinidos,
+    path: articulosDefinidosEindifinidosPDF,
   ),
   Course(
     name: 'Pronombres personales y posesivos',
@@ -289,6 +278,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: pronombresPersonalesYposesivos,
+    path: pronombresPersonalesYposesivosPDF,
   ),
   Course(
     name: 'Pedir y dar información personal',
@@ -296,6 +286,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: pedirInformacionPersonal,
+    path: pedirInformacionPersonalPDF,
   ),
   Course(
     name: 'Describir personas',
@@ -303,6 +294,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: describirPersonas,
+    path: describirPersonasPDF,
   ),
   Course(
     name: 'Describir objetos',
@@ -310,6 +302,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: describirObjetos,
+    path: describirObjetosPDF,
   ),
   Course(
     name: 'Expresar gustos y preferencias',
@@ -317,6 +310,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: expresarGustosYpreferencias,
+    path: expresarGustosYpreferenciasPDF,
   ),
   Course(
     name: 'Verbos de acción comunes',
@@ -324,6 +318,7 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: verbosDeAccionComunes,
+    path: verbosDeAccionComunesPDF,
   ),
   Course(
     name: 'Describir la rutina diaria',
@@ -331,13 +326,15 @@ List<Course> courseIngles = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: describirLaRutinaDiaria,
+    path: describirLaRutinaDiariaPDF,
   ),
   Course(
     name: 'Actividades de tiempo libre',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
-    url: describirLaRutinaDiaria,
+    url: actividadesDeTiempoLibre,
+    path: actividadesDeTiempoLibrePDF,
   ),
 ];
 
@@ -348,6 +345,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: definicionYramasDeLaQuimica,
+    path: definicionYramasDeLaQuimicaPDF,
   ),
   Course(
     name: 'Importancia de la química en la vida diaria',
@@ -355,6 +353,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: importanciaDeLaQuimica,
+    path: importanciaDeLaQuimicaPDF,
   ),
   Course(
     name: 'Método científico',
@@ -362,6 +361,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: metodoCientifico,
+    path: metodoCientificoPDF,
   ),
   Course(
     name: 'Estados de la materia',
@@ -369,6 +369,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: estadosDeLaMateria,
+    path: estadosDeLaMateriaPDF,
   ),
   Course(
     name: 'Propiedades físicas y químicas',
@@ -376,6 +377,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: propiedadesFisicasYquimicas,
+    path: propiedadesFisicasYquimicasPDF,
   ),
   Course(
     name: 'Cambios físicos y químicos',
@@ -383,6 +385,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: cambiosFisicosYquimicos,
+    path: cambiosFisicosYquimicosPDF,
   ),
   Course(
     name: 'Teoría atómica',
@@ -390,6 +393,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: teoriaAtomica,
+    path: teoriaAtomicaPDF,
   ),
   Course(
     name: 'Partículas subatómicas (protones, neutrones, electrones)',
@@ -397,6 +401,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: particulasSubatomicas,
+    path: particulasSubatomicasPDF,
   ),
   Course(
     name: 'Número atómico y masa atómica',
@@ -404,6 +409,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: numeroAtomico,
+    path: numeroAtomicoPDF,
   ),
   Course(
     name: 'Historia y desarrollo de la tabla periódica',
@@ -411,6 +417,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: historiaDeLaTablaPeriodica,
+    path: historiaDeLaTablaPeriodicaPDF,
   ),
   Course(
     name: 'Clasificación de los elementos',
@@ -418,6 +425,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: clasificacionDeLosElementos,
+    path: clasificacionDeLosElementosPDF,
   ),
   Course(
     name:
@@ -426,6 +434,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: propiedadesPeriodicas,
+    path: propiedadesPeriodicasPDF,
   ),
   Course(
     name: 'Tipos de enlaces (iónico, covalente, metálico)',
@@ -433,6 +442,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: tiposDeEnlacesQuimicos,
+    path: tiposDeEnlacesQuimicosPDF,
   ),
   Course(
     name: 'Propiedades de los compuestos iónicos y covalentes',
@@ -440,6 +450,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: propiedadesDeLosCompuestos,
+    path: propiedadesDeLosCompuestosPDF,
   ),
   Course(
     name:
@@ -448,6 +459,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: geometriaMolecular,
+    path: geometriaMolecularPDF,
   ),
   Course(
     name:
@@ -456,6 +468,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: tiposDeReaccionesQuimicas,
+    path: tiposDeReaccionesQuimicasPDF,
   ),
   Course(
     name: 'Ley de conservación de la masa',
@@ -463,6 +476,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: leyDeLaConservacionDeLaMasa,
+    path: leyDeLaConservacionDeLaMasaPDF,
   ),
   Course(
     name: 'Balanceo de ecuaciones químicas',
@@ -470,6 +484,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: balanceoDeEcuaciones,
+    path: balanceoDeEcuacionesPDF,
   ),
   Course(
     name: 'Concepto de mol y número de Avogadro',
@@ -477,6 +492,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: conceptoDeMol,
+    path: conceptoDeMolPDF,
   ),
   Course(
     name: 'Cálculos estequiométricos',
@@ -484,6 +500,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: calculosEstioquimetricos,
+    path: calculosEstioquimetricosPDF,
   ),
   Course(
     name: 'Rendimiento de una reacción',
@@ -491,6 +508,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: rendimientoDeUnaReaccion,
+    path: rendimientoDeUnaReaccionPDF,
   ),
   Course(
     name: 'Tipos de soluciones (sólidas, líquidas, gaseosas)',
@@ -498,6 +516,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: tiposDeSoluciones,
+    path: tiposDeSolucionesPDF,
   ),
   Course(
     name:
@@ -506,6 +525,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: concentracionDeSoluciones,
+    path: concentracionDeSolucionesPDF,
   ),
   Course(
     name: 'Propiedades coligativas',
@@ -513,6 +533,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: propiedadesColigativas,
+    path: propiedadesColigativasPDF,
   ),
   Course(
     name: 'Definiciones de ácidos y bases (Arrhenius, Brønsted-Lowry, Lewis)',
@@ -520,6 +541,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: definicionDeAcidosYbases,
+    path: definicionDeAcidosYbasesPDF,
   ),
   Course(
     name: 'Escala de pH',
@@ -527,6 +549,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: escalaDelPh,
+    path: escalaDelPhPDF,
   ),
   Course(
     name: 'Reacciones de neutralización',
@@ -534,6 +557,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: reaccionesDeNeutralizacion,
+    path: reaccionesDeNeutralizacionPDF,
   ),
   Course(
     name: 'Introducción a los compuestos orgánicos',
@@ -541,6 +565,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: introduccionAlosCompuestos,
+    path: introduccionAlosCompuestosPDF,
   ),
   Course(
     name: 'Hidrocarburos (alcanos, alquenos, alquinos)',
@@ -548,6 +573,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: hidrocarburos,
+    path: hidrocarburosPDF,
   ),
   Course(
     name: 'Grupos funcionales y nomenclatura',
@@ -555,6 +581,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: gruposFuncionalesYnomenclatura,
+    path: gruposFuncionalesYnomenclaturaPDF,
   ),
   Course(
     name: 'Contaminación del aire, agua y suelo',
@@ -562,6 +589,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: contaminacionAlAireAguaYtierra,
+    path: contaminacionAlAireAguaYtierraPDF,
   ),
   Course(
     name: 'Impacto ambiental de los productos químicos',
@@ -569,6 +597,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: impactoAmbientalDeLosProductosQuimicos,
+    path: impactoAmbientalDeLosProductosQuimicosPDF,
   ),
   Course(
     name: 'Medidas de protección al medio ambiente',
@@ -576,6 +605,7 @@ List<Course> courseQuimica = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: medidasDeProteccion,
+    path: medidasDeProteccionPDF,
   ),
 ];
 
@@ -586,6 +616,7 @@ List<Course> courseRedaccion = [
     name: "Numeros naturales y enteros",
     thumbnail: "assets/icons/flutter.jpg",
     url: '',
+    path: '',
   ),
   Course(
     author: "DevWheels",
@@ -593,6 +624,7 @@ List<Course> courseRedaccion = [
     name: "Propiedades de las operaciones",
     thumbnail: "assets/icons/react.jpg",
     url: '',
+    path: '',
   ),
   Course(
     author: "DevWheels",
@@ -600,6 +632,7 @@ List<Course> courseRedaccion = [
     name: "Node - The complete guide",
     thumbnail: "assets/icons/node.png",
     url: '',
+    path: '',
   ),
   Course(
     author: "DevWheels",
@@ -607,6 +640,7 @@ List<Course> courseRedaccion = [
     name: "Flutter Novice to Ninja",
     thumbnail: "assets/icons/flutter.jpg",
     url: '',
+    path: '',
   ),
   Course(
     author: "DevWheels",
@@ -614,6 +648,7 @@ List<Course> courseRedaccion = [
     name: "React Novice to Ninja",
     thumbnail: "assets/icons/react.jpg",
     url: '',
+    path: '',
   ),
   Course(
     author: "DevWheels",
@@ -621,5 +656,6 @@ List<Course> courseRedaccion = [
     name: "Node - The complete guide",
     thumbnail: "assets/icons/node.png",
     url: '',
+    path: '',
   ),
 ];
