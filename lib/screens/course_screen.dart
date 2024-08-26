@@ -111,6 +111,7 @@ class CourseContainer extends StatelessWidget {
               builder: (context) => DetailsScreen(
                     title: course.name,
                     url: course.url,
+                    path: course.path,
                   ))),
       child: Container(
         decoration: BoxDecoration(

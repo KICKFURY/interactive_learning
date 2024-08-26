@@ -3,6 +3,7 @@ import 'package:interactive_learning/constants/icons.dart';
 import 'package:interactive_learning/constants/size.dart';
 import 'package:interactive_learning/screens/featured_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:interactive_learning/screens/settings.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class _BaseScreenState extends State<BaseScreen> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     FeaturedScreen(),
-    FeaturedScreen(),
-    FeaturedScreen(),
-    FeaturedScreen(),
+    SettingScreen(title: "Hola")
+    //FeaturedScreen(),
+    //FeaturedScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -42,28 +43,6 @@ class _BaseScreenState extends State<BaseScreen> {
                 height: kBottomNavigationBarItemSize,
               ),
               label: "Featured",
-            ),
-            BottomNavigationBarItem(
-              activeIcon: Image.asset(
-                icLearning,
-                height: kBottomNavigationBarItemSize,
-              ),
-              icon: Image.asset(
-                icLearningOutlined,
-                height: kBottomNavigationBarItemSize,
-              ),
-              label: "My Learning",
-            ),
-            BottomNavigationBarItem(
-              activeIcon: Image.asset(
-                icWishlist,
-                height: kBottomNavigationBarItemSize,
-              ),
-              icon: Image.asset(
-                icWishlistOutlined,
-                height: kBottomNavigationBarItemSize,
-              ),
-              label: "Wishlist",
             ),
             BottomNavigationBarItem(
               activeIcon: Image.asset(

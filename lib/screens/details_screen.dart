@@ -4,16 +4,20 @@ import 'package:interactive_learning/models/lesson.dart';
 import 'package:interactive_learning/widgets/custom_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:interactive_learning/widgets/pdf_viewer.dart';
 
 import '../widgets/lesson_card.dart';
 
 class DetailsScreen extends StatefulWidget {
   final String title;
   final String url;
+  final String path;
+
   const DetailsScreen({
     Key? key,
     required this.title,
     required this.url,
+    required this.path,
   }) : super(key: key);
 
   @override
@@ -138,7 +142,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   index: _selectedTag,
                   changeTab: changeTab,
                 ),
-                _selectedTag == 0 ? const PlayList() : const Description(),
+                _selectedTag == 0
+                    ? const PlayList()
+                    : Description(path: widget.path),
               ],
             ),
           ),
@@ -183,14 +189,20 @@ class PlayList extends StatelessWidget {
 }
 
 class Description extends StatelessWidget {
-  const Description({Key? key}) : super(key: key);
+  const Description({
+    Key? key,
+    required this.path,
+  }) : super(key: key);
+
+  final String path;
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 20.0),
-      child: Text(
-          "Build Flutter iOS and Android Apps with a Single Codebase: Learn Google's Flutter Mobile Development Framework & Dart"),
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 20.0),
+        child: MyPdfViwer(path: path),
+      ),
     );
   }
 }
@@ -198,8 +210,11 @@ class Description extends StatelessWidget {
 class CustomTabView extends StatefulWidget {
   final Function(int) changeTab;
   final int index;
-  const CustomTabView({Key? key, required this.changeTab, required this.index})
-      : super(key: key);
+  const CustomTabView({
+    Key? key,
+    required this.changeTab,
+    required this.index,
+  }) : super(key: key);
 
   @override
   State<CustomTabView> createState() => _CustomTabViewState();
