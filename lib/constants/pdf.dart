@@ -139,3 +139,25 @@ const impactoAmbientalDeLosProductosQuimicosPDF =
     'https://apps.who.int/gb/ebwha/pdf_files/WHA76/A76_ACONF2-sp.pdf';
 const medidasDeProteccionPDF =
     'https://unece.org/DAM/env/pp/Publications/Aarhus_brochure_Protecting_your_environment_esp.pdf';
+
+//PDF redaccion
+const introduccionAlaRedaccionPDF =
+    "https://bono.edu.do/wp-content/uploads/2015/08/Introduccion_a_la_redaccion_academica_Santiago_Koval-2013.pdf";
+const tiposDeTextosPDF =
+    "https://www.uaeh.edu.mx/docencia/VI_Lectura/bachillerato/documentos/2014/LECT121.pdf";
+const tecnicasDeRedaccion =
+    "http://www.ittizimin.edu.mx/wp-content/uploads/2016/08/La_Redaccion.pdf";
+const estiloYtono =
+    "https://www.um.es/analesps/informes/APA7ed-resumenNormas-v10febr2021.pdf";
+const ortografiaYgramatica =
+    "https://cife.edu.mx/recursos/wp-content/uploads/2019/01/manual_de_reglas_ortograficas.pdf";
+const revisionYcorreccion =
+    "https://generales.uprrp.edu/competencias-linguisticas/wp-content/uploads/sites/15/2020/10/Revision-y-edicion-de-textos.pdf";
+const escrituraCreativa =
+    "https://angyalma.com/escritor2/wp-content/uploads/2021/01/Escritura-Creativa-Un-manual-practico-Spanish-Edition_nodrm.pdf";
+const redaccionAcademica =
+    "https://angyalma.com/escritor2/wp-content/uploads/2021/01/Escritura-Creativa-Un-manual-practico-Spanish-Edition_nodrm.pdf";
+const produccionDeTextos =
+    "https://cvc.cervantes.es/ensenanza/biblioteca_ele/asele/pdf/02/02_0141.pdf";
+const proyectosDeEscritura =
+    "https://repository.usta.edu.co/bitstream/handle/11634/3777/Gallegomerthy-anx-2015.pdf";
