@@ -80,6 +80,8 @@ flutter:
     - 'assets/icons/settings.png'
     - 'assets/icons/star_outlined.png'
     - 'assets/icons/star.png'
+    - 'assets/icons/Presentation1.png'
+    - 'assets/icons/Presentation2.png'
 
   # To add assets to your application, add an assets section, like this:
   # assets:

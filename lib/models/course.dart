@@ -21,7 +21,7 @@ class Course {
 
 List<Course> courseMatematicas = [
   Course(
-    name: 'Numeros naturales y enteros',
+    name: 'Números naturales y enteros',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/flutter.jpg',
@@ -37,7 +37,7 @@ List<Course> courseMatematicas = [
     path: propiedadesDeLasOperacionesPDF,
   ),
   Course(
-    name: 'Multiplos y divisores',
+    name: 'Múltiplos y divisores',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -45,7 +45,7 @@ List<Course> courseMatematicas = [
     path: multilposYDivisoresPDF,
   ),
   Course(
-    name: 'Concepto de fraccion',
+    name: 'Concepto de fracción',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -53,7 +53,7 @@ List<Course> courseMatematicas = [
     path: conceptoDeFraccionPDF,
   ),
   Course(
-    name: 'Operaciones con fraccion',
+    name: 'Operaciones con fracción',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -61,7 +61,7 @@ List<Course> courseMatematicas = [
     path: operacionesConFraccionPDF,
   ),
   Course(
-    name: 'Convertir fraccion en decimal',
+    name: 'Convertir fracción en decimal',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -85,7 +85,7 @@ List<Course> courseMatematicas = [
     path: unidadesDeMedidasPDF,
   ),
   Course(
-    name: 'Conversion de unidades de medidas',
+    name: 'Conversión de unidades de medidas',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -93,7 +93,7 @@ List<Course> courseMatematicas = [
     path: conversionDeUnidadesPDF,
   ),
   Course(
-    name: 'Areas y perimetros',
+    name: 'Áreas y perímetros',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -101,7 +101,7 @@ List<Course> courseMatematicas = [
     path: perimetroFigurasGeometricasPDF,
   ),
   Course(
-    name: 'Volumen de solidos regulares',
+    name: 'Volumen de sólidos regulares',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -109,7 +109,7 @@ List<Course> courseMatematicas = [
     path: volumenDeSolidoPDF,
   ),
   Course(
-    name: 'Giro, traslacion y simetria. Transacciones geometricas',
+    name: 'Giro, traslación y simetría. Transacciones geométricas',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -134,7 +134,7 @@ List<Course> courseMatematicas = [
     path: ecuacionesDePrimerGradoPDF,
   ),
   Course(
-    name: 'Patrones y Secuencias',
+    name: 'Patrones y secuencias',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -142,7 +142,7 @@ List<Course> courseMatematicas = [
     path: patronesYSecuenciasPDF,
   ),
   Course(
-    name: 'Recoleccion y organizacion de datos',
+    name: 'Recolección y organización de datos',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -150,7 +150,7 @@ List<Course> courseMatematicas = [
     path: recoleccionYOrganizacionDeDatosPDF,
   ),
   Course(
-    name: 'Tipos de graficos estadisticos',
+    name: 'Tipos de gráficos estadísticos',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -174,7 +174,7 @@ List<Course> courseMatematicas = [
     path: probabilidadPDF,
   ),
   Course(
-    name: 'Como saber que operacion hay que hacer en un problema matemático',
+    name: '¿Cómo saber que operación hay que hacer en un problema matemático?',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -182,7 +182,7 @@ List<Course> courseMatematicas = [
     path: comoSaberQueOperacionHacerPDF,
   ),
   Course(
-    name: 'Razonamiento Logico',
+    name: 'Razonamiento lógico',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -190,7 +190,7 @@ List<Course> courseMatematicas = [
     path: razonamientoLogicoPDF,
   ),
   Course(
-    name: 'Funciones matematicas en la vida diaria',
+    name: 'Funciones matemáticas en la vida diaria',
     completedPercentage: .50,
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
@@ -624,7 +624,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: importanciaDeLaRedaccion,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Proceso de escritura: planificación, redacción, revisión y edición',
@@ -632,7 +632,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: procesoDeEscritura,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Oración temática',
@@ -640,7 +640,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: oracionTematica,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Desarrollo y coherencia',
@@ -648,7 +648,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: desarrolloYcoherencia,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Conclusión del párrafo',
@@ -656,7 +656,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: conclusionDelParrafo,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name:
@@ -673,7 +673,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: descriptivo,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Expositivo: organización lógica y claridad',
@@ -681,7 +681,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: expositivo,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Argumentativo: tesis, argumentos y contraargumentos',
@@ -689,7 +689,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: argumentativo,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Uso de conectores y transiciones',
@@ -705,7 +705,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: variedadEnLaEstructuraDeLasOraciones,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Evitar redundancias y repeticiones',
@@ -713,7 +713,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: evitarRedundanciasYrepeticiones,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Adaptación del estilo al propósito y audiencia',
@@ -729,7 +729,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: usoAdecuadoDelRegistroFormaleInformal,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Consistencia en el tono',
@@ -737,7 +737,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: consistenciaEnElTono,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Reglas ortográficas esenciales',
@@ -753,7 +753,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: concordanciaVerbalYnominal,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Uso correcto de los signos de puntuación',
@@ -761,7 +761,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: usoCorrectoDeLosSignosDePuntuacion,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Técnicas de auto-revisión',
@@ -769,7 +769,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: tecnicasDeAutoRevision,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Identificación y corrección de errores comunes',
@@ -777,7 +777,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: identificacionYrevisionDeErroresComunes,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Uso de herramientas de corrección (diccionarios, software)',
@@ -785,7 +785,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: usoDeHerramientasDeCorrecion,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Técnicas para estimular la creatividad',
@@ -801,7 +801,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: escriturasDeRelatosCortosYpoesia,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Ejercicios de escritura libre',
@@ -809,7 +809,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: ejerciciosDeEscrituraLibre,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Estructura de ensayos',
@@ -825,7 +825,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: estructuraDeInforma,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Citas y referencias bibliográficas',
@@ -833,7 +833,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: citasYreferenciasBibliograficas,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Presentación de argumentos y evidencias',
@@ -841,7 +841,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: presentacionDeArgumentosYevidencia,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Redacción de cartas formales e informales',
@@ -857,7 +857,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: elaboracionDeArticulosYresenas,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Escritura de discursos y presentaciones',
@@ -865,7 +865,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: escrituraDeDiscursosYpresentaciones,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Planificación y desarrollo de proyectos largos',
@@ -881,7 +881,7 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: colaboracionEnLaEscrituraEnGrupo,
-    path: '',
+    path: placeholderPDF,
   ),
   Course(
     name: 'Presentación y publicación de trabajos',
@@ -889,6 +889,6 @@ List<Course> courseRedaccion = [
     author: 'DevWheels',
     thumbnail: 'assets/icons/react.jpg',
     url: presentacionYpublicacionDeTrabajosEscritos,
-    path: '',
+    path: placeholderPDF,
   ),
 ];
