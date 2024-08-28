@@ -36,7 +36,7 @@ List<Category> categoryList = [
   Category(
     id: 4,
     name: 'Redaccion',
-    noOfCourses: courseQuimica.length,
+    noOfCourses: courseRedaccion.length,
     thumbnail: 'assets/icons/design.jpg',
   ),
 ];

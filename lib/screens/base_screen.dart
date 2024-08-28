@@ -20,7 +20,7 @@ class _BaseScreenState extends State<BaseScreen> with TickerProviderStateMixin {
 
   static const List<Widget> _widgetOptions = <Widget>[
     FeaturedScreen(),
-    SettingScreen(title: "Información Acerda de los Creadores"),
+    SettingScreen(title: "Información Acerca de los Creadores"),
   ];
 
   @override
@@ -90,14 +90,15 @@ class _BaseScreenState extends State<BaseScreen> with TickerProviderStateMixin {
           ),
           BottomNavigationBarItem(
             activeIcon: Image.asset(
-              icSetting,
+              icInfo,
               height: kBottomNavigationBarItemSize,
+              color: Colors.purple[600],
             ),
             icon: Image.asset(
-              icSettingOutlined,
+              icInfo,
               height: kBottomNavigationBarItemSize,
             ),
-            label: "Settings",
+            label: "Acerca de ",
           ),
         ],
         currentIndex: _selectedIndex,
