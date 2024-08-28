@@ -7,11 +7,28 @@ class SettingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        const AppBar(),
-        Text(title),
-      ],
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          const AppBar(),
+          const SizedBox(
+            height: 25,
+          ),
+          Text(
+            title,
+            style: const TextStyle(color: Colors.grey, fontSize: 20),
+          ),
+          Expanded(
+            child: ListView(
+              children: <Widget>[
+                Image.asset('assets/icons/Presentation1.png'),
+                const SizedBox(height: 20),
+                Image.asset('assets/icons/Presentation2.png'),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -48,7 +65,7 @@ class AppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Learning Interactive",
+                "Settings",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
             ],

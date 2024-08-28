@@ -161,3 +161,7 @@ const produccionDeTextos =
     "https://cvc.cervantes.es/ensenanza/biblioteca_ele/asele/pdf/02/02_0141.pdf";
 const proyectosDeEscritura =
     "https://repository.usta.edu.co/bitstream/handle/11634/3777/Gallegomerthy-anx-2015.pdf";
+
+//placeholder
+const placeholderPDF =
+    'https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf';
