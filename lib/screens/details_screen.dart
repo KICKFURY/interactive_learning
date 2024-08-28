@@ -50,7 +50,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     children: [
                       Align(
                         child: Text(
-                          "Flutter",
+                          "Curso",
                           style: Theme.of(context).textTheme.displayMedium,
                         ),
                       ),
@@ -86,7 +86,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   height: 3,
                 ),
                 const Text(
-                  "Created by Developer",
+                  "Created TriCode Innovators",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 16,
@@ -94,46 +94,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 ),
                 const SizedBox(
                   height: 3,
-                ),
-                Row(
-                  children: [
-                    Image.asset(
-                      icFeaturedOutlined,
-                      height: 20,
-                    ),
-                    const Text(
-                      " 4.8",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Icon(
-                      Icons.timer,
-                      color: Colors.grey,
-                    ),
-                    const Text(
-                      " 72 Hours",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
-                    ),
-                    const Spacer(),
-                    const Text(
-                      " \$40",
-                      style: TextStyle(
-                        color: kPrimaryColor,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
                 ),
                 const SizedBox(
                   height: 15,
@@ -143,22 +103,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   changeTab: changeTab,
                 ),
                 _selectedTag == 0
-                    ? const PlayList()
-                    : Description(path: widget.path),
+                    ? Description(path: widget.path)
+                    : const PlayList(),
               ],
             ),
           ),
-        ),
-        bottomSheet: BottomSheet(
-          onClosing: () {},
-          backgroundColor: Colors.white,
-          enableDrag: false,
-          builder: (context) {
-            return const SizedBox(
-              height: 80,
-              child: EnrollBottomSheet(),
-            );
-          },
         ),
       ),
     );
@@ -221,7 +170,7 @@ class CustomTabView extends StatefulWidget {
 }
 
 class _CustomTabViewState extends State<CustomTabView> {
-  final List<String> _tags = ["Playlist (22)", "Description"];
+  final List<String> _tags = ["Recurso"];
 
   Widget _buildTags(int index) {
     return GestureDetector(
@@ -230,7 +179,7 @@ class _CustomTabViewState extends State<CustomTabView> {
       },
       child: Container(
         padding: EdgeInsets.symmetric(
-            horizontal: MediaQuery.of(context).size.width * .08, vertical: 15),
+            horizontal: MediaQuery.sizeOf(context).width * .33, vertical: 15),
         decoration: BoxDecoration(
           color: widget.index == index ? kPrimaryColor : null,
           borderRadius: BorderRadius.circular(10),
@@ -260,56 +209,6 @@ class _CustomTabViewState extends State<CustomTabView> {
             .entries
             .map((MapEntry map) => _buildTags(map.key))
             .toList(),
-      ),
-    );
-  }
-}
-
-class EnrollBottomSheet extends StatefulWidget {
-  const EnrollBottomSheet({Key? key}) : super(key: key);
-
-  @override
-  _EnrollBottomSheetState createState() => _EnrollBottomSheetState();
-}
-
-class _EnrollBottomSheetState extends State<EnrollBottomSheet> {
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 30.0,
-      ),
-      child: Row(
-        children: [
-          CustomIconButton(
-            onTap: () {},
-            height: 45,
-            width: 45,
-            child: const Icon(
-              Icons.favorite,
-              color: Colors.pink,
-              size: 30,
-            ),
-          ),
-          const SizedBox(
-            width: 20,
-          ),
-          Expanded(
-            child: CustomIconButton(
-              onTap: () {},
-              color: kPrimaryColor,
-              height: 45,
-              width: 45,
-              child: const Text(
-                "Enroll Now",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
-            ),
-          )
-        ],
       ),
     );
   }

@@ -21,9 +21,15 @@ class SettingScreen extends StatelessWidget {
           Expanded(
             child: ListView(
               children: <Widget>[
-                Image.asset('assets/icons/Presentation1.png'),
+                Image.asset(
+                  'assets/icons/Presentation1.png',
+                  height: MediaQuery.of(context).size.width * .6,
+                ),
                 const SizedBox(height: 20),
-                Image.asset('assets/icons/Presentation2.png'),
+                Image.asset(
+                  'assets/icons/Presentation2.png',
+                  height: MediaQuery.of(context).size.width * .6,
+                ),
               ],
             ),
           ),
@@ -62,10 +68,10 @@ class AppBar extends StatelessWidget {
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Settings",
+                "Acerca de",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
             ],

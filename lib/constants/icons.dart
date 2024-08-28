@@ -12,3 +12,4 @@ const icDone = '$_path/done.png';
 const icLock = '$_path/lock.png';
 const icPlayNext = '$_path/play_next.png';
 const icPause = '$_path/pause.png';
+const icInfo = '$_path/info.png';
