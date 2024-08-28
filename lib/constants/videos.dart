@@ -99,3 +99,60 @@ const impactoAmbientalDeLosProductosQuimicos =
 const medidasDeProteccion = 'https://www.youtube.com/watch?v=nvUqnpicSd0';
 
 //redaccion
+const introduccionAlaRedaccion = "https://www.youtube.com/watch?v=wsinu7st5Jg";
+const importanciaDeLaRedaccion = "https://www.youtube.com/watch?v=k246QNJOuIA";
+const procesoDeEscritura = "https://www.youtube.com/watch?v=T9V5ARKO2dI";
+const oracionTematica = "https://www.youtube.com/watch?v=OQufCprrBos";
+const desarrolloYcoherencia = "https://www.youtube.com/watch?v=cabQSlkrqnQ";
+const conclusionDelParrafo = "https://www.youtube.com/watch?v=0Y88cV4opJY";
+const narrativo = "https://www.youtube.com/watch?v=svYk1swWAxE";
+const descriptivo = "https://www.youtube.com/watch?v=TLTCzwjIreY";
+const expositivo = "https://www.youtube.com/watch?v=6hrHj_dpEpQ";
+const argumentativo = "https://www.youtube.com/watch?v=Mq4Hzx1peNU";
+const usoDeConectoresYtransiciones =
+    "https://www.youtube.com/watch?v=0yK64bAjrOw";
+const variedadEnLaEstructuraDeLasOraciones =
+    "https://www.youtube.com/watch?v=6CUOeA2BU0Q";
+const evitarRedundanciasYrepeticiones =
+    "https://www.youtube.com/watch?v=d7t88AGZBGA";
+const adaptacionDelEstiloAlPropositoYaudiencia =
+    "https://www.youtube.com/watch?v=F6obLbKCAqE";
+const usoAdecuadoDelRegistroFormaleInformal =
+    "https://www.youtube.com/watch?v=UyZN9a9V_gE";
+const consistenciaEnElTono = "https://www.youtube.com/watch?v=-dRLTCOopUc";
+const reglasOrtograficasEscenciales =
+    "https://www.youtube.com/watch?v=JIRjcua7pm8";
+const concordanciaVerbalYnominal =
+    "https://www.youtube.com/watch?v=zeXJ7kZ03zg";
+const usoCorrectoDeLosSignosDePuntuacion =
+    "https://www.youtube.com/watch?v=Zx2Cf_gNu_I";
+const revisionYedicion = "https://www.youtube.com/watch?v=Y-vFLJi9E4M";
+const tecnicasDeAutoRevision = "https://www.youtube.com/watch?v=96g0x-8X88w";
+const identificacionYrevisionDeErroresComunes =
+    "https://www.youtube.com/watch?v=t2SE3QxSh7I";
+const usoDeHerramientasDeCorrecion =
+    "https://www.youtube.com/watch?v=043erC-cN_8";
+const tecnicasParaEstimularLaCreatividad =
+    "https://www.youtube.com/watch?v=3E0Cf7bPnBk";
+const escriturasDeRelatosCortosYpoesia =
+    "https://www.youtube.com/watch?v=soSsfYmu0Y8";
+const ejerciciosDeEscrituraLibre =
+    "https://www.youtube.com/watch?v=Fu6XpLg_ql4";
+const estructuraDeEnsayos = "https://www.youtube.com/watch?v=FwgeiavmoiI";
+const estructuraDeInforma = "https://www.youtube.com/watch?v=l0wzBG4JHaw";
+const citasYreferenciasBibliograficas =
+    "https://www.youtube.com/watch?v=XdRif0a8QI0";
+const presentacionDeArgumentosYevidencia =
+    "https://www.youtube.com/watch?v=DmRpQEWF-Io";
+const redaccionDeCartasFormalesEinformales =
+    "https://www.youtube.com/watch?v=I0VNY9hiFSs";
+const elaboracionDeArticulosYresenas =
+    "https://www.youtube.com/watch?v=n9j6eLzGQxs";
+const escrituraDeDiscursosYpresentaciones =
+    "https://www.youtube.com/watch?v=EtaTTvTj4wk";
+const planificacionYdesarrolloDeProyectosLargos =
+    "https://www.youtube.com/watch?v=Og7iI31kwPQ";
+const colaboracionEnLaEscrituraEnGrupo =
+    "https://www.youtube.com/watch?v=KVnE4308EpM";
+const presentacionYpublicacionDeTrabajosEscritos =
+    "https://www.youtube.com/watch?v=WJgSPuQmRY0";
